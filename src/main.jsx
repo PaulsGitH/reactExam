@@ -11,6 +11,7 @@ import SiteHeader from './components/siteHeader';
 import MoviesContextProvider from "./contexts/moviesContext";
 import AddMovieReviewPage from './pages/addMovieReviewPage';
 import TrendingTodayPage from "./pages/trendingTodayPage";
+import NowPlayingPage from "./pages/nowPlayingPage";
 
 
 
@@ -39,6 +40,7 @@ const App = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="*" element={<Navigate to="/" />} />
             <Route path="/movies/trending/today" element={<TrendingTodayPage />} />
+            <Route path="/movies/now/playing" element={<NowPlayingPage/>} />
           </Routes>
         </MoviesContextProvider>
       </BrowserRouter>
